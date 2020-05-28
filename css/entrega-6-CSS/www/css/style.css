@@ -1,0 +1,219 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: sans-serif;
+  --antiguo: antiquewhite;
+  --font: Karla, sans-serif;
+  --dark: #233223;
+  --shadow: 1px 1px 2px #000000;
+}
+
+body {
+  background-color: var(--dark);
+  font-family: Karla, sans-serif;
+  color: var(--antiguo);
+}
+
+body > header,
+body > main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Genericas */
+.tittle {
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--antiguo);
+}
+.tittle-formulario {
+  color: var(--dark);
+  background-color: var(--antiguo);
+}
+
+.botón {
+  background-color: var(--antiguo);
+  color: var(--dark);
+  text-decoration: none;
+  padding: 0.25rem 1rem;
+  border: 0;
+}
+/* HEADER */
+
+body > header.cabecera {
+  background-image: url(/img/surfheader.jpeg);
+  background-size: 400px;
+  height: 150px;
+  padding: 1rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body > header h1 {
+  color: goldenrod;
+  font-family: var(--font);
+  text-shadow: var(--shadow);
+}
+body > header nav {
+  flex-grow: 0.9;
+  color: var(--antiguo);
+}
+
+body > header nav ul {
+  list-style: none;
+  display: flex;
+}
+body > header nav ul li {
+  margin: 0 0.5rem;
+}
+
+body > header a {
+  color: black;
+  background-color: var(--antiguo);
+  text-decoration: none;
+  padding: 3px;
+}
+
+/* Main */
+
+main > section {
+  padding: 2rem 1rem;
+}
+
+main > section > h1 {
+  margin-bottom: 1rem;
+}
+
+/* Lista */
+
+section#lista ul {
+  list-style: none;
+}
+
+section#lista ul li {
+  margin-bottom: 1rem;
+}
+
+section#lista ul li figure img {
+  height: 15rem;
+  object-fit: cover;
+}
+
+section#lista ul li a {
+  display: block;
+  padding: 1rem;
+  text-align: center;
+  color: var(--dark);
+  text-decoration: none;
+}
+
+section#lista ul li section h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* form */
+
+form {
+  background-color: var(--antiguo);
+  margin-bottom: 5rem;
+  color: var(--dark);
+}
+
+form fieldset {
+  border: 0;
+}
+
+form fieldset label {
+  display: block;
+  font-size: 0.8rem;
+}
+
+form input,
+form textarea,
+form input {
+  width: 100%;
+  border: 2px solid var(--dark);
+  padding: 0.25rem;
+  background-color: var(--antiguo);
+  color: var(--dark);
+}
+
+form textarea fieldset.inline label {
+  display: flex;
+}
+
+form fieldset.inline input {
+  width: auto;
+}
+
+@media (min-width: 700px) {
+  html {
+    font-size: 18px;
+  }
+  .tittle {
+    font-size: 3rem;
+  }
+  body > header {
+    min-height: 25rem;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  body > header > nav {
+    flex-grow: 0;
+    order: -1;
+  }
+
+  section p {
+    columns: 2;
+  }
+
+  section#lista ul {
+    display: flex;
+  }
+
+  section#lista ul li:nth-child(2) {
+    margin: 0 1rem;
+  }
+  section#lista figure img {
+    height: 15rem;
+  }
+
+  form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  form input,
+  form textarea,
+  form select {
+    padding: 0.5rem;
+  }
+
+  form fieldset {
+    width: 50%;
+    padding: 0.5rem;
+  }
+  form fieldset.wide {
+    width: 100%;
+  }
+
+  form button {
+    margin: 0 0.5rem;
+  }
+}
