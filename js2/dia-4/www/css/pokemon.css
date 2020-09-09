@@ -1,0 +1,18 @@
+ul.pokemon {
+  list-style: none;
+  padding: 0;
+}
+
+ul.pokemon li h1 {
+  background-color: rebeccapurple;
+  color: gold;
+  margin: 0;
+}
+
+ul.pokemon li p {
+  background-color: gold;
+  color: rebeccapurple;
+  margin: 0;
+  padding: 1rem;
+  display: none;
+}

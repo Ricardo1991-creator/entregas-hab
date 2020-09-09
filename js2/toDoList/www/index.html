@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=T, initial-scale=1.0" />
+    <title>todo list</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>
+        Mi agenda
+      </h1>
+    </header>
+
+    <form id="new-todo">
+      <fieldset>
+        <label for="todo">Nueva tarea:</label>
+        <input
+          type="next"
+          id="todo"
+          name="todo"
+          placeholder=" Escribe tu tarea"
+        />
+      </fieldset>
+
+      <button class="add">Añadir</button>
+
+      <button type="button" class="clean">Limpiar tareas</button>
+      <button type="button" class="delete">Borrar todas</button>
+    </form>
+
+    <ul id="todos">
+      <!-- <li>
+        <input type="checkbox" />
+        <p>Texto de la tarea</p>
+      </li>
+      <li>
+        <input class="done" type="checkbox" />
+        <p>Texto de la tarea</p>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <p>Texto de la tarea</p>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <p>Texto de la tarea</p>
+      </li>
+      <li>
+        <input type="checkbox" />
+        <p>Texto de la tarea</p>
+      </li> -->
+    </ul>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>
